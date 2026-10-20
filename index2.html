@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #1e293b;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+            border-color: #38bdf8;
+            background: #334155;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border: 2px solid #38bdf8;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #38bdf8;
+            transform: translateY(-3px);
+        }
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background: #1e293b;
+        }
+
+        .about h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+		
+		
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px #38bdf855;
+}
+
+
+.gallery-card {
+    width: 280px;
+    padding: 15px;
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-card h3 {
+    color: #38bdf8;
+    margin-top: 15px;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+<section class="hero" id="home">
+
+    <img src="myphoto.1.jpg"
+         alt="My Profile Photo"
+         class="profile-img">
+
+    <h1>Hello, I'm <span>Anwar</span></h1>
+
+    <p>I'm learning Digital Marketing and UI/UX Design.</p>
+
+    <a href="#about" class="btn">View My Work</a>
+
+</section>
+
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio! I am learning HTML, CSS,
+            UI/UX Design and Digital Marketing. I enjoy creating
+            beautiful and user-friendly websites.
+        </p>
+    </section>
+
+    <section class="hero" id="contact">
+        <h2>Contact Me</h2>
+        <p>Thank you for visiting my portfolio.</p>
+        <a href="mailto:asyed3118@gmail.com" class="btn">
+            Email Me
+        </a>
+    </section>
+	
+<!-- MY SKILLS SECTION -->
+<section style="padding:70px 8%; text-align:center;">
+
+    <h2 style="color:#38bdf8; font-size:32px; margin-bottom:15px;">
+        My Skills
+    </h2>
+
+    <p style="color:#cbd5e1; margin-bottom:35px;">
+        Technologies I am learning and practicing
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Creating website structure</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Styling and animations</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>UI/UX Design</h3>
+            <p>Designing user-friendly websites</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Figma</h3>
+            <p>Creating website prototypes</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MY SERVICES SECTION -->
+<section style="padding:70px 8%; text-align:center; background:#1e293b;">
+
+    <h2 style="color:#38bdf8; font-size:32px; margin-bottom:35px;">
+        My Services
+    </h2>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+
+        <div class="skill-card">
+            <h3>Web Design</h3>
+            <p>Beautiful and modern website layouts.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Responsive Design</h3>
+            <p>Websites that adjust to different screen sizes.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>UI Design</h3>
+            <p>Clean and user-friendly interface designs.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MY PROJECTS SECTION -->
+<section style="padding:70px 8%; text-align:center;">
+
+    <h2 style="color:#38bdf8; font-size:32px; margin-bottom:15px;">
+        My Projects
+    </h2>
+
+    <p style="color:#cbd5e1; margin-bottom:35px;">
+        Some projects I am practicing and developing
+    </p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+
+        <div class="skill-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal website built using HTML and CSS.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Interior Design Website</h3>
+            <p>A website concept for interior and exterior works.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Login Page Design</h3>
+            <p>A simple login interface design practice.</p>
+        </div>
+
+    </div>
+	
+<!-- MY PHOTO GALLERY -->
+<h2 style="color:#38bdf8; margin-top:50px; margin-bottom:25px;">
+    My Design Gallery
+</h2>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px;">
+
+    <div class="gallery-card">
+        <img src="project1.jpg" alt="Web Design">
+        <h3>Web Design</h3>
+    </div>
+
+    <div class="gallery-card">
+        <img src="project2.jpg" alt="Laptop Design">
+        <h3>Laptop Design</h3>
+    </div>
+
+    <div class="gallery-card">
+        <img src="project3.jpg" alt="UI UX Design">
+        <h3>UI/UX Design</h3>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION SECTION -->
+<section style="padding:70px 8%; text-align:center; background:#1e293b;">
+
+    <h2 style="color:#38bdf8; font-size:32px; margin-bottom:25px;">
+        Education & Learning
+    </h2>
+
+    <div class="skill-card" style="max-width:650px; margin:auto;">
+        <h3>Web Design & UI/UX</h3>
+        <p>
+            Currently learning website design, HTML, CSS,
+            Figma and other digital skills.
+        </p>
+        <br>
+        <h3>My Goal</h3>
+        <p>
+            To improve my skills, create professional websites
+            and build a successful career in the IT field.
+        </p>
+    </div>
+</section>
+
+
+<!-- ADDITIONAL CARD STYLES -->
+<style>
+    .skill-card {
+        background:#1e293b;
+        border:2px solid #334155;
+        border-radius:12px;
+        padding:30px 22px;
+        width:250px;
+        transition:0.3s;
+    }
+
+    .skill-card h3 {
+        color:#38bdf8;
+        margin-bottom:15px;
+    }
+
+    .skill-card p {
+        color:#cbd5e1;
+        line-height:1.7;
+    }
+
+    .skill-card:hover {
+        transform:translateY(-8px);
+        border-color:#38bdf8;
+        background:#263449;
+        box-shadow:0 8px 25px #00000040;
+    }
+</style>
+
+
+    <footer>
+        <p>© 2026 My Portfolio | Designed by Anwar</p>
+    </footer>
+
+</body>
+</html>
